@@ -1,9 +1,10 @@
 <script setup>
-import Memory from './views/memory/index.vue'
+// import Memory from './views/memory/index.vue'
 </script>
 
 <template>
-  <Memory />
+  <!-- <Memory /> -->
+  <router-view />
 </template>
 
 <style scoped>

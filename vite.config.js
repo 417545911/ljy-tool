@@ -5,6 +5,11 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd());
   return {
+    resolve:{
+      alias:{
+        "@":"/src"
+      }
+    },
     plugins: [
       vue(), // 自定义插件
       {

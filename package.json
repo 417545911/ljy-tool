@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "echarts": "^5.5.0",
-    "vue": "^3.4.21"
+    "element-plus": "^2.7.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

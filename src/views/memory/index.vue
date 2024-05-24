@@ -81,9 +81,9 @@ function updateData() {
 <template>
   <div>
     <Clock />
-    <h3 style="padding: 10px; text-align: center">
+    <div style="text-align: center">
       每2s浏览器指定tab内存使用量
-    </h3>
+    </div>
     <div
       ref="chartDom"
       style="width: 1500px; height: 700px; margin: 0 auto"
