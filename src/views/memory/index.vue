@@ -80,7 +80,7 @@ function updateData() {
 
 <template>
   <div>
-    <Clock />
+    <!-- <Clock /> -->
     <div style="text-align: center">
       每2s浏览器指定tab内存使用量
     </div>
