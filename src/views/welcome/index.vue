@@ -19,7 +19,6 @@ const handleFile = (event) => {
       // 获取表内容，转json格式
       const worksheet = workbook.Sheets[workbook.SheetNames[index]];
       const jsonData = utils.sheet_to_json(worksheet, { header: 1 });
-
       // 格式化json
       const headerArr = jsonData[0];
       const tem = [];
@@ -39,6 +38,7 @@ const handleFile = (event) => {
   reader.readAsArrayBuffer(file);
 };
 
+// 导出xls
 const exportExcelFile=(array, sheetName = 'sheet1', fileName = '2017-2023.xlsx') =>{
   const jsonWorkSheet = utils.json_to_sheet(array);
   const workBook = {
