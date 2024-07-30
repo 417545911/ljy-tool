@@ -1,8 +1,7 @@
-<script setup>
+<script setup></script>
 
-</script>
-
-
-<template></template>
+<template>
+  <el-button @click="toggleDark()">{{ isDark ? "dark" : "light" }}</el-button>
+</template>
 
 <style></style>

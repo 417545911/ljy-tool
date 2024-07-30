@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory  } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+import Layoout from "@/layout/index.vue";
 
 const routes = [
   {
@@ -9,12 +10,20 @@ const routes = [
   {
     path: "/xlsx",
     name: "Xlsx",
-    component: () => import("@/views/xlsx/index.vue"),
+    component: Layoout,
+    redirect:"/xlsx/con",
+    children:[
+      {
+        name:"XlsxCon",
+        path:"con",
+        component: () => import("@/views/xlsx/index.vue"),
+      }
+    ]
   },
 ];
 
 export const router = createRouter({
-  history: createWebHistory (),
+  history: createWebHistory(),
   routes,
   scrollBehavior: () => ({ left: 0, top: 0 }),
 });
