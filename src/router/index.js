@@ -8,14 +8,14 @@ const routes = [
     component: () => import("@/views/welcome/index.vue"),
   },
   {
-    path: "/xlsx",
-    name: "Xlsx",
+    path: "/office",
+    name: "Office",
     component: Layoout,
-    redirect:"/xlsx/con",
+    redirect:"/office/xlsx",
     children:[
       {
-        name:"XlsxCon",
-        path:"con",
+        name:"Xlsx",
+        path:"xlsx",
         component: () => import("@/views/xlsx/index.vue"),
       }
     ]
