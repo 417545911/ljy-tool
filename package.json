@@ -11,6 +11,7 @@
   "dependencies": {
     "@vueuse/core": "^10.11.0",
     "axios": "^1.7.4",
+    "dayjs": "^1.11.13",
     "echarts": "^5.5.0",
     "element-plus": "^2.7.3",
     "highlight.js": "^11.10.0",
