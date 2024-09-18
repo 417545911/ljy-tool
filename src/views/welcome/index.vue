@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <div class="welcome-box"></div>
+  <el-button @click="toggleDark()">{{ isDark ? "dark" : "light" }}</el-button>
 </template>
 
 <style></style>
