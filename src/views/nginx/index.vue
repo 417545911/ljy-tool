@@ -1,4 +1,5 @@
 <script setup>
+import "./iconfont.js";
 import "highlight.js/styles/stackoverflow-dark.css";
 import hljs from "highlight.js/lib/core";
 import nginx from "highlight.js/lib/languages/nginx";
@@ -62,12 +63,13 @@ server {
     access_log /user/logs/admin.log;
 }
 
-`
-highlightedCode.value = hljs.highlight(originalCode, { language: "nginx" }).value
-
+`;
+highlightedCode.value = hljs.highlight(originalCode, { language: "nginx" }).value;
 </script>
 
 <template>
-  <div class="whitespace-pre pl-40" v-html="highlightedCode">
-  </div>
+  <svg class="icon svg-icon" aria-hidden="true">
+    <use xlink:href="#icon-anquanbaozhang"></use>
+  </svg>
+  <div class="whitespace-pre pl-40" v-html="highlightedCode"></div>
 </template>
